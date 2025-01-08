@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo2.maincontroller">
+    <children>
+        <TextField fx:id="idProdukField" layoutX="29" layoutY="26" promptText="ID Mahasiswa" />
+        <TextField fx:id="namaProdukField" layoutX="30" layoutY="68" promptText="Nama Mahasiswa" />
+        <Button fx:id="addButton" layoutX="29" layoutY="114" text="ADD" onAction="#handleAdd" />
+        <Button fx:id="updateButton" layoutX="104" layoutY="114" text="UPDATE" onAction="#handleUpdate" />
+        <Button fx:id="deleteButton" layoutX="201" layoutY="114" text="DELETE" onAction="#handleDelete" />
+        <TableView fx:id="tableView" layoutX="29" layoutY="172" prefWidth="400" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="columnId" text="ID Mahasiswa" prefWidth="200" />
+                <TableColumn fx:id="columnNama" text="Nama Mahasiswa" prefWidth="200" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
